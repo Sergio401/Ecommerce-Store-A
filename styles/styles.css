@@ -9,9 +9,17 @@
   padding:0 12px;
   background-color:#6C46E2;
   min-width: 320px;
+  /* border:1px solid red; */
 }
 
-.Header__container{
+.Header__container-mobile{
+  background-color:#6C46E2;
+  height:52px;
+  width:100%;
+  display:flex;
+  align-items:center;
+}
+.Header__container-desktop{
   background-color:#6C46E2;
   height:52px;
   width:100%;
@@ -23,22 +31,39 @@
   width:inherit; 
 }
 
+.Header__menu{
+  color: #fff;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
 .Header__logo{
   color:#fff;
-  margin-right: 10px;
+  font-size: 24px;
+  margin-right: 3px;
 }
 .Header__list{
   width: inherit;
   /* border:1px solid red; */
   display:flex;
   justify-content: space-between;
-  
-
 }
-
 .Header__list-item{
   color:#fff;
-
   list-style: none;
   
 }
+
+@media (min-width: 600px) {
+  .Header__container-mobile {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .Header__container-desktop {
+    display: none;
+  }
+}
+
+
+
