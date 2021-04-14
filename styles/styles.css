@@ -1,0 +1,44 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:'Chakra Petch', sans-serif ;
+  /* outline:1px solid red; */
+}
+
+.Header__wrapper{
+  padding:0 12px;
+  background-color:#6C46E2;
+  min-width: 320px;
+}
+
+.Header__container{
+  background-color:#6C46E2;
+  height:52px;
+  width:100%;
+  display:flex;
+  align-items:center;
+}
+.Header__nav{
+  display:flex;
+  width:inherit; 
+}
+
+.Header__logo{
+  color:#fff;
+  margin-right: 10px;
+}
+.Header__list{
+  width: inherit;
+  /* border:1px solid red; */
+  display:flex;
+  justify-content: space-between;
+  
+
+}
+
+.Header__list-item{
+  color:#fff;
+
+  list-style: none;
+  
+}

@@ -1,0 +1,19 @@
+{
+  "name": "ecommerce",
+  "description": "Gone are the times that you need to find a local game store to get the latest Halo release. Instead, you can get any game you want, and some sweet gear, right on the internet.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sergio401/Ecommerce-Store-A.git"
+  },
+  "author": "amaurysotog@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sergio401/Ecommerce-Store-A/issues"
+  },
+  "homepage": "https://github.com/Sergio401/Ecommerce-Store-A#readme"
+}
