@@ -4,15 +4,16 @@
   min-width: 320px;
   max-width: 1024px;
   margin: 0 auto;
+  padding:0 12px;
 }
 
 .Games__container{
-  margin-top:45px;
+  margin-top:15px;
 }
 
 .Games__title{
   background-color:var(--gray-small);
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .Games__title-text{
@@ -20,4 +21,93 @@
   color:var(--purple-color);
   padding:10px;
   z-index: 200;
+  margin-bottom: 15px;
+}
+
+.Games___posts{
+  
+}
+
+.Games__posts-game{
+  display:flex;
+  width: 350px;
+  height: 190px;
+  background-color: var(--gray-small);
+  margin-bottom:12px;
+  align-items: center;
+  border-radius: 20px;
+  list-style: none;
+}
+
+.Games__posts-img img{
+  object-fit: contain;
+  width:150px;
+  height:150px;
+}
+
+.Games__posts-info{
+  align-content: center;
+  /* text-align: center; */
+  height:150px;
+  width:170px;
+  /* border: 1px solid red; */
+}
+.Games__posts-info--title{
+  color: var(--purple-color);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.Games__posts-info--despcrition{
+  color:var(--gray-dark);
+  font-size: .9rem;
+  margin-bottom: 5px;
+}
+.Games__posts-info--price{
+  background-color: var(--purple-color);
+  text-align: center;
+  color:var(--gray-small);
+  width: 100%;
+  height:25px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.Games__posts-info--buttons{
+  display:flex;
+  justify-content:space-between;
+  text-align: center;
+  align-items: center;
+  
+}
+.Games__posts-eye {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width:41px;
+  height: 31px;
+  background-color: var(--purple-color);
+  color:var(--gray-small);
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.Games__posts-cart{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width:41px;
+  height: 31px;
+  background-color: var(--purple-color);
+  color:var(--gray-small);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  /* border:1px solid red; */
+
+}
+.Games__posts-eye:hover{
+  background-color:var(--purple-second);
+}
+.Games__posts-cart:hover{
+  background-color:var(--purple-second);
 }

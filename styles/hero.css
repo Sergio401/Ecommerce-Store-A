@@ -4,14 +4,13 @@
 max-width: 1024px;
 margin: 0 auto;
 /* display:none; */
-height:600px;
+/* height:600px; */
 /* border: 1px solid red; */
 
 }
 .Hero__container{
   padding: 10px 12px;
-
-  
+  height:375px;
 }
 .Hero__sliders{
   position:relative;
@@ -74,6 +73,9 @@ height:600px;
 }
 
 @media (min-width: 600px) {
+  .Hero__container{
+    height: 600px;
+  }
   .Hero__slider-img img {
     height:600px;
   }
