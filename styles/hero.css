@@ -4,7 +4,7 @@
 max-width: 1024px;
 margin: 0 auto;
 /* display:none; */
-height:400px;
+height:600px;
 /* border: 1px solid red; */
 
 }
@@ -29,8 +29,7 @@ height:400px;
 }
 .Hero__sliders li:target{
   opacity: 1;
-   /*Mostramos el <li> del enlace que pulsemos*/
-  
+   /*Mostramos el <li> del enlace que pulsemos*/ 
 }
 
 .Hero__slider-item{
@@ -49,6 +48,7 @@ height:400px;
 }
 
 .Hero__selects{
+  
 
 }
 .Hero__selects-options{

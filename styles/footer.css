@@ -1,35 +1,36 @@
 .Footer__wrapper {
-    background-color: #6C46E2;
-    position: absolute;
-    width: 100%;
-    min-width: 345px;
-    height: 390px;
-    margin-top: 500px;
+  background-color: #6C46E2;
+  position: absolute;
+  width: 100%;
+  min-width: 345px;
+  height: 390px;
+  margin-top: 500px;
 }
 .Footer__container {
-    width: 100%;
-    min-width: 320px;
-    margin-top: 20px;
-    text-align: center;
+  width: 100%;
+  min-width: 320px;
+  margin-top: 20px;
+  text-align: center;
 }
 .Footer__mobile-column {
-    font-size: 16px;
-    color: #fff;
-    font-weight: 500;
-    line-height: 40px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 40px;
 }
 .Footer__mobile-social ul {
-    list-style-type: none;
-    text-align: center
+ list-style-type: none;
+ text-align: center
 }
-.Footer__mobile-social li{    /* para ajustar las redes de manera vertical */
-    display: inline;
+.Footer__mobile-social li{    
+  display: inline;
 }
+
 .Footer__mobile-social a{
-    margin-top: 40px;
-    width: 50px;
-    height: 50px;
-    color: #fff;
-    text-decoration: none;
-    margin-inline: -10px;
+  margin-top: 40px;
+  width: 50px;
+  height: 50px;
+  color: #fff; 
+  text-decoration: none;
+  margin-inline: -10px;
 }

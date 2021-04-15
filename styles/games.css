@@ -1,0 +1,23 @@
+@import url(./header.css);
+
+.Games__wrapper{
+  min-width: 320px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.Games__container{
+  margin-top:45px;
+}
+
+.Games__title{
+  background-color:var(--gray-small);
+  border-radius: 15px;
+}
+
+.Games__title-text{
+  text-align: center;
+  color:var(--purple-color);
+  padding:10px;
+  z-index: 200;
+}
