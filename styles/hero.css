@@ -72,3 +72,12 @@ height:400px;
   margin: 0 5px;
   text-decoration: none;
 }
+
+@media (min-width: 600px) {
+  .Hero__slider-img img {
+    height:600px;
+  }
+  .Hero__selects-options{
+    top: 600px;
+  }
+}
