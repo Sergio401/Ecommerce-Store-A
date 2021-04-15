@@ -1,0 +1,74 @@
+@import url(./header.css);
+
+.Hero__wrapper{
+max-width: 1024px;
+margin: 0 auto;
+/* display:none; */
+height:400px;
+/* border: 1px solid red; */
+
+}
+.Hero__container{
+  padding: 10px 12px;
+
+  
+}
+.Hero__sliders{
+  position:relative;
+  list-style:none;
+}
+.Hero__slider-post{
+  position:absolute;
+  /* Con absolute todos mis articles estarán en encima de otro, dentro del relative de hero-sliders */
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+.Hero__sliders li:first-child{
+  opacity: 1;
+  /* Mostramos el primer <li> */
+}
+.Hero__sliders li:target{
+  opacity: 1;
+   /*Mostramos el <li> del enlace que pulsemos*/
+  
+}
+
+.Hero__slider-item{
+  
+
+}
+
+.Hero__slider-img img{
+  width: 100%;
+  object-fit: cover;
+  height: 380px;
+  /* display: block; */
+  border-radius: 15px;
+  transition: 0.5s ease;
+  min-width: 320px;
+}
+
+.Hero__selects{
+
+}
+.Hero__selects-options{
+  text-align: center;
+  margin: 10px 0;
+  position: absolute;
+  top: 400px;
+  width: 100vw;
+  /* z-index: 200; */
+
+}
+.Hero__selects-options{
+  display: flex;
+  justify-content:center;
+  list-style: none;
+  text-decoration: none;
+  
+}
+.Hero__selects-items a{
+  color:var(--gray-second);
+  margin: 0 5px;
+  text-decoration: none;
+}
