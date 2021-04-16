@@ -1,0 +1,16 @@
+
+.Games___posts.access{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.Games__posts-game.access{
+  border:1px solid var(--purple-color);
+  background-color: transparent;
+  height:237px;
+  width:412px;
+  justify-content:space-around;
+
+}

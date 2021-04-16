@@ -12,6 +12,7 @@
   padding:0;
   font-family:'Chakra Petch', sans-serif ;
   /* outline:1px solid red; */
+  scroll-behavior:smooth;
 }
 
 .Header__wrapper{
@@ -98,16 +99,21 @@
   flex-direction: column;
   align-items:center;
   justify-content:center;
+  list-style:none;
+  
 }
 .Header__menu-item{
+  margin:25px;
+}
+.Header__menu-item a{
   font-weight: bold;
   font-size:28px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: var(--purple-color);
-  list-style: none;
   cursor:pointer;
+  text-decoration: none;
 }
-.Header__menu-item:hover{
+.Header__menu-item a:hover{
   color: var(--purple-second);
 }
 
@@ -124,10 +130,16 @@
   display:flex;
   justify-content: space-between;
 }
-.Header__list-item{
+.Header__list-item {
   color: var(--gray-small);
   list-style: none;
-  
+  text-decoration: none;
+}
+.Header__list-item a{
+  color: var(--gray-small);
+  list-style: none;
+  text-decoration: none;
+
 }
 
 

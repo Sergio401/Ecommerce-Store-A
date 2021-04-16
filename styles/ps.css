@@ -1,0 +1,49 @@
+
+@import url(./header.css);
+
+.Games___posts.ps{
+  display:flex;
+  /* border: 1px solid red; */
+  overflow-y: scroll;
+  justify-content:center;
+}
+
+.Games___posts.ps::-webkit-scrollbar {
+  /* background-color: var(--gray-small); */
+  height: 5px;
+}
+.Games___posts.ps::-webkit-scrollbar-thumb {
+  background-color: var(--purple-color);
+  
+}
+
+.Games__posts-game.ps{
+  height:360px;
+  width:200px;
+  display:block;
+  align-items:center;
+  text-align: center;
+  justify-content:center;
+  padding:10px;
+  margin-right:12px;
+}
+.Games__posts-img.ps img{
+  object-fit:cover;
+  height:198px;
+  width:198px;
+  border-radius: 10px;
+  object-position: 0px 1px;
+}
+.Games__posts-info.ps{
+  margin:0 auto;
+}
+
+/* //Responsive */
+@media (min-width: 600px) {
+  
+
+
+}
+
+
+ 

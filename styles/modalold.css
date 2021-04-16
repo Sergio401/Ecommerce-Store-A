@@ -1,0 +1,77 @@
+
+@import url(./header.css);
+
+.Modal__container{
+    position: fixed;
+    display: none;
+    opacity: 0;
+    top: -15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    transition: opacity 300ms;
+    will-change: opacity;
+    z-index: 1;
+    visibility: hidden;
+    overflow: scroll;
+  
+}
+
+.Modal__container.active{
+    opacity: 1;
+    display: block;
+    z-index: 1;
+    visibility: visible;
+}
+
+
+
+
+.Modal__posts-game{
+  position: relative;
+
+  margin:50px auto;
+  width:500px;
+  height:280px;
+  /* display:flex;
+  justify-content:center;
+  
+  width:80%;
+  height:300px;
+  border:1px solid red; */
+}
+
+.Modal__posts-img{
+  margin-right:20px;
+}
+.Modal__posts-info--buttons{
+  position: relative;
+}
+
+.Modal__posts-close{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1.4rem;
+  color:var(--purple-color);
+  cursor: pointer;
+}
+
+
+
+::-webkit-scrollbar{
+  display:none;
+}
+
+/*Responsive*/
+
+@media (min-width: 600px) {
+ 
+}
+@media (max-width: 600px) {
+  .Modal__posts-game{
+    width:380px
+  }
+}
+

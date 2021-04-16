@@ -1,0 +1,54 @@
+
+@import url(./header.css);
+
+.Games___posts.fans{
+  display:flex;
+  /* border: 1px solid red; */
+  overflow-y: scroll;
+  justify-content:center;
+}
+
+.Games___posts.fans::-webkit-scrollbar {
+  /* background-color: var(--gray-small); */
+  height: 5px;
+}
+.Games___posts.fans::-webkit-scrollbar-thumb {
+  background-color: var(--purple-color);
+  
+}
+
+.Games__posts-game.fans{
+  height:360px;
+  width:200px;
+  display:block;
+  align-items:center;
+  text-align: center;
+  justify-content:center;
+  padding:10px;
+  margin-right:12px;
+  background-color:transparent;
+  border: 1px solid var(--purple-color);
+}
+.Games__posts-img.fans img{
+  object-fit:cover;
+  height:198px;
+  width:198px;
+  border-radius: 10px;
+  object-position: 0px 1px;
+  margin-bottom:10px;
+}
+.Games__posts-info--title.fans{
+  margin-bottom: 25px;
+}
+
+.Games__posts-info.fans{
+  margin:0 auto;
+}
+
+/* //Responsive */
+@media (min-width: 600px) {
+  
+
+
+}
+
