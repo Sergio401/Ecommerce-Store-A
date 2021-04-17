@@ -26,6 +26,8 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <link rel="stylesheet" href="sweetalert2.min.css">
   <title>Shop Games</title>
 </head>
 
@@ -89,6 +91,7 @@
               <div class="Hero__slider-img">
                 <img src="https://images2.alphacoders.com/436/thumb-1920-436840.jpg" alt="">
               </div>
+              <p class="Hero__text">The Witcher is Here</p>
             </article>
           </li>
           <li id="slider2" class="Hero__slider-post">
@@ -103,6 +106,9 @@
               <div class="Hero__slider-img">
                 <img src="https://images3.alphacoders.com/608/thumb-1920-608887.jpg" alt="">
               </div>
+              <!-- <p class="Hero__text">En The Witcher eres un cazador de monstruos que busca a la niña de la profecía en un
+                vasto mundo repleto de ciudades,
+                peligrosos puertos de montaña y cuevas olvidadas.</p> -->
             </article>
           </li>
         </ul>
@@ -126,7 +132,7 @@
 
 
     <!-- Modal -->
-    <div class="Modal__container active">
+    <div class="Modal__container animate__animated  animate__fadeInUp ">
       <div class="Modal__posts-game">
 
         <div class="Modal__posts-img">
@@ -135,12 +141,22 @@
         <div class="Modal__posts-info">
           <p class="Modal__posts-info--title">Super Mario Bros 3</p>
           <p class="Modal__posts-info--despcrition">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            molestias culpa assumenda animi odit t </p>
+          </p>
+
           <div class="Modal__posts-info--price">USD 45,00</div>
+          <!-- <select name="" id="">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+
+          </select> -->
           <div class="Modal__posts-info--buttons">
 
             <div class="Modal__posts-cart">
-              <div class="fas fa-shopping-cart"></div>
+              <div class="fas fa-shopping-cart"> BUY NOW</div>
             </div>
           </div>
         </div>
@@ -729,6 +745,8 @@
   </div>
   <script src="./js/menu.js"></script>
   <script src="./js/modal.js"></script>
+  <script src="sweetalert2.all.min.js"></script>
+
 </body>
 
 

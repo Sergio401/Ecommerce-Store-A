@@ -51,7 +51,10 @@
 
 
 .Modal__posts-game{
-  display:flex;
+  /* display:flex; */
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  justify-items: center;
   width: 350px;
   height: 190px;
   background-color: var(--gray-small);
@@ -68,9 +71,10 @@
 
 .Modal__posts-img img{
   object-fit: contain;
-  width:150px;
-  height:150px;
-  margin-right:20px;
+  width:186px;
+  /* width:150px; */
+  /* height:150px; */
+  /* margin-right:20px; */
   
 }
 
@@ -128,13 +132,13 @@
   display: flex;
   justify-content:center;
   align-items: center;
-  width:41px;
-  height: 31px;
+  width:100%;
+  height:35px;
   background-color: var(--purple-color);
   color:var(--gray-small);
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1rem;
   /* border:1px solid red; */
 
 }
@@ -161,9 +165,6 @@
   border:1px solid red; */
 }
 
-.Modal__posts-img{
-  margin-right:20px;
-}
 
 
 .Modal__posts-close{
@@ -189,7 +190,28 @@
 }
 @media (max-width: 600px) {
   .Modal__posts-game{
-    width:380px
+    min-width: 320px;
+    width:90%;
+  }
+}
+@media (max-width: 420px) {
+  .Modal__posts-game{
+    display:block;
+    height: 500px;
+   
+  }
+  .Modal__posts-img{
+    text-align: center;
+    padding-top: 25px;
+  }
+  .Modal__posts-info{
+    margin:0 auto;
+    margin-top: 20px;
+    
+    
+  }
+  .Modal__posts-info--despcrition{
+    margin-bottom:25px;
   }
 }
 

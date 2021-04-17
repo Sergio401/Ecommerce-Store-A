@@ -32,7 +32,9 @@
 } */
 
 .Games___posts{
-  
+  display: flex;
+  justify-content:center;
+  overflow-x: scroll;
 }
 
 .Games__posts-game{
@@ -44,6 +46,7 @@
   align-items: center;
   border-radius: 20px;
   list-style: none;
+  margin-right: 12px;
 }
 
 .Games__posts-img img{

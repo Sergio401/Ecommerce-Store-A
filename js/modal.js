@@ -1,6 +1,12 @@
+// import Swal from 'sweetalert2/dist/sweetalert2.js'
+
+// import 'sweetalert2/src/sweetalert2.scss'
+
+
 const $modal = document.querySelector('.Modal__container')
-const $modalContent = document.querySelector('.modal-content');
+// const $modalContent = document.querySelector('.modal-content');
 const $btnClose = document.querySelector('.Modal__posts-close')
+const $btnBuy = document.querySelector('.Modal__posts-cart')
 const $modalImg = document.querySelector('.Modal-img')
 
 const $gamesList = document.querySelectorAll('.Games__posts-game')
@@ -38,9 +44,22 @@ $gamesList.forEach((list, index) => {
   })
 
 });
+//Comprar en modal
+$btnBuy.addEventListener('click', () => {
+  Swal.fire({
+    title: 'Add to cart',
+    text: 'Do you want to continue',
+    icon: 'success',
+    confirmButtonText: 'Exit'
+  })
+  $modal.classList.remove('active')
+
+
+})
 
 //Cerrar el modal..
 $btnClose.addEventListener('click', () => {
   $modal.classList.remove('active')
 
 })
+
