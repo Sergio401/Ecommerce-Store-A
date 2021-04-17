@@ -7,7 +7,7 @@
 
 
   height: 390px;
-  margin-top: 30px;
+  /* margin-top: 50px; */
   margin:0 auto;
 
 }
@@ -17,6 +17,7 @@
   margin-top: 20px;
   text-align: center;
   margin:0 auto;
+  margin-top: 30px;
 }
 .Footer__mobile-column {
   font-size: 16px;
