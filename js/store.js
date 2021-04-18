@@ -4,6 +4,34 @@ if (document.readyState == 'loading') {
     ready()
 }
 
+const $modalCart = document.querySelector('.Cart__container')
+const $iconCart = document.querySelector('.Header__list-item-cart')
+const $iconCartD = document.querySelector('.Header__list-item-cartD')
+const $iconCloseCart = document.querySelector('.Cart__close')
+
+$iconCart.addEventListener('click', (e) => {
+    e.preventDefault();
+    $modalCart.classList.add('active')
+
+
+})
+
+
+$iconCartD.addEventListener('click', (e) => {
+    e.preventDefault();
+    $modalCart.classList.add('active')
+
+
+})
+
+$iconCloseCart.addEventListener('click', () => {
+    $modalCart.classList.remove('active')
+})
+
+
+
+
+
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
     for (var i = 0; i < removeCartItemButtons.length; i++) {
@@ -81,7 +109,7 @@ function addItemToCart(title, price, imageSrc) {
         <span class="cart-price cart-column">${price}</span>
         <div class="cart-quantity cart-column">
             <input class="cart-quantity-input" type="number" value="1">
-            <button class="btn btn-danger" type="button">REMOVE</button>
+            <button class="btn btn-danger fas fa-trash-alt" type="button"></button>
         </div>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
@@ -104,3 +132,4 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$USD ' + total
 }
+
