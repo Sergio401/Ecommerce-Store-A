@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles/footer.css">
   <link rel="stylesheet" href="styles/hero.css">
   <link rel="stylesheet" href="styles/games.css">
-  <link rel="stylesheet" href="styles/trendings.css">
+  <link rel="stylesheet" href="styles/trending.css">
   <link rel="stylesheet" href="styles/xbox.css">
   <link rel="stylesheet" href="styles/ps.css">
   <link rel="stylesheet" href="styles/fans.css">
@@ -44,7 +44,7 @@
           <ul class="Header__menu-list">
             <li class="Header__menu-item"><a href="#">SHOP GAMES</a> </li>
             <li class="Header__menu-item"><a href="#latest">LATEST</a> </li>
-            <li class="Header__menu-item"><a href="#trendings">TRENDINGS</a> </li>
+            <li class="Header__menu-item"><a href="#trending">TRENDING</a> </li>
             <li class="Header__menu-item"><a href="#xbox">XBOX</a> </li>
             <li class="Header__menu-item"><a href="#ps">PS</a> </li>
             <li class="Header__menu-item"><a href="#accessories">ACCESORIES</a> </li>
@@ -73,7 +73,7 @@
         <ul class="Header__list">
           <li class="Header__list-item"> <a href="#">SHOP GAMES</a> </li>
           <li class="Header__list-item"> <a href="#latest">LATEST</a></li>
-          <li class="Header__list-item"> <a href="#trendings">TRENDINGS</a> </li>
+          <li class="Header__list-item"> <a href="#trending">TRENDING</a> </li>
           <li class="Header__list-item"> <a href="#xbox">XBOX</a> </li>
           <li class="Header__list-item"> <a href="#ps">PS</a> </li>
           <li class="Header__list-item"> <a href="#accessories">ACCESORIES</a> </li>
@@ -92,24 +92,21 @@
       <div class="Hero__container">
         <ul class="Hero__sliders">
           <li id="slider1" class="Hero__slider-post">
-            <article id="slider1" class="Hero__slider-item">
+            <article class="Hero__slider-item">
               <div class="Hero__slider-img">
                 <img src="https://images3.alphacoders.com/608/thumb-1920-608887.jpg" alt="">
               </div>
-              <!-- <p class="Hero__text">En The Witcher eres un cazador de monstruos que busca a la niña de la profecía en un
-                vasto mundo repleto de ciudades,
-                peligrosos puertos de montaña y cuevas olvidadas.</p> -->
             </article>
           </li>
           <li id="slider2" class="Hero__slider-post">
-            <article id="slider2" class="Hero__slider-item">
+            <article class="Hero__slider-item">
               <div class="Hero__slider-img">
                 <img src="https://images4.alphacoders.com/937/thumb-1920-937844.png" alt="">
               </div>
             </article>
           </li>
           <li id="slider3" class="Hero__slider-post">
-            <article id="slider3" class="Hero__slider-item">
+            <article class="Hero__slider-item">
               <div class="Hero__slider-img">
                 <img src="https://images2.alphacoders.com/436/thumb-1920-436840.jpg" alt="">
               </div>
@@ -152,20 +149,10 @@
             src="https://images-na.ssl-images-amazon.com/images/I/51156B1VoAL._AC_.jpg" alt="">
         </div>
         <div class="Modal__posts-info">
-          <p class="Modal__posts-info--title shop-item-title">Super Mario Bros 3</p>
-          <p class="Modal__posts-info--despcrition">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
-          </p>
+          <p class="Modal__posts-info--title">Super Mario Bros 3</p>
+          <p class="Modal__posts-info--description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita</p>
 
           <div class="Modal__posts-info--price shop-item-price">45,00</div>
-          <!-- <select name="" id="">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-
-          </select> -->
           <div class="Modal__posts-info--buttons">
 
             <div class="Modal__posts-cart">
@@ -191,10 +178,11 @@
               <img class="Games-img shop-item-image "
                 src="https://i.pinimg.com/564x/3a/02/68/3a02685be25e504ea6bd2848e2a9715c.jpg" alt="">
             </div>
-            <div class="Games__posts-info shop-item-details">
-              <p class="Games__posts-info--title   shop-item-title">Uncharted 4 PS4</p>
-              <p class="Games__posts-info--despcrition">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <div class="Games__posts-info--price  shop-item-price"> 60,00</div>
+
+            <div class="Games__posts-info">
+              <p class="Games__posts-info--title">Uncharted 4 PS4</p>
+              <p class="Games__posts-info--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="Games__posts-info--price">USD 60,00</div>
               <div class="Games__posts-info--buttons">
                 <div class="eye-view eye-view Games__posts-eye">
                   <div class=" fas fa-eye"></div>
@@ -211,10 +199,10 @@
               <img class="Games-img shop-item-image "
                 src="https://i.pinimg.com/564x/3a/02/68/3a02685be25e504ea6bd2848e2a9715c.jpg" alt="">
             </div>
-            <div class="Games__posts-info shop-item-details">
-              <p class="Games__posts-info--title   shop-item-title">Uncharted 2 PS4</p>
-              <p class="Games__posts-info--despcrition">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <div class="Games__posts-info--price  shop-item-price"> 60,00</div>
+            <div class="Games__posts-info">
+              <p class="Games__posts-info--title">Uncharted 4 PS4</p>
+              <p class="Games__posts-info--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="Games__posts-info--price">USD 45,00</div>
               <div class="Games__posts-info--buttons">
                 <div class="eye-view eye-view Games__posts-eye">
                   <div class=" fas fa-eye"></div>
@@ -231,88 +219,90 @@
     </section>
 
     <!-- Trendingds Games -->
-    <section id="trendings" class="Games__wrapper">
+    <section id="trending" class="Games__wrapper">
       <div class="Games__container">
         <div class="Games__title">
-          <h1 class="Games__title-text ">TRENDINGS GAMES</h1>
+          <h1 class="Games__title-text ">TRENDING GAMES</h1>
         </div>
-        <ul class="Games___posts animate__animated animate__fadeInUp trendings">
-          <li class="Games__posts-game trendings shop-item">
-            <div class="Games__posts-img trendings">
-              <img class="Games-img shop-item-image"
-                src="https://i.pinimg.com/564x/3a/02/68/3a02685be25e504ea6bd2848e2a9715c.jpg" alt="">
+        <ul class="Games___posts animate__animated animate__fadeInUp trending">
+          <li class="Games__posts-game trending">
+            <div class="Games__posts-img trending">
+              <img class="Games-img" src="https://i.pinimg.com/564x/3a/02/68/3a02685be25e504ea6bd2848e2a9715c.jpg"
+                alt="">
             </div>
-            <div class="Games__posts-info trendings shop-item-details">
-              <p class="Games__posts-info--title trendings shop-item-title">Uncharted 4 PS4</p>
-              <p class="Games__posts-info--despcrition trendings">Lorem ipsum dolor sit amet, consectetur adipisicing
+            <div class="Games__posts-info trending">
+              <p class="Games__posts-info--title trending">Uncharted 4 PS4</p>
+              <p class="Games__posts-info--description trending">Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit.</p>
-              <div class="Games__posts-info--price trendings shop-item-price"> 45,00</div>
-              <div class="Games__posts-info--buttons trendings">
-                <div class="eye-view Games__posts-eye trendings">
+              <div class="Games__posts-info--price trending">USD 45,00</div>
+              <div class="Games__posts-info--buttons trending">
+                <div class="eye-view Games__posts-eye trending">
                   <div class="fas fa-eye"></div>
                 </div>
-                <div class="Games__posts-cart trendings">
-                  <div class="fas fa-shopping-cart shop-item-button"></div>
+                <div class="Games__posts-cart trending">
+                  <div class="fas fa-shopping-cart"></div>
                 </div>
               </div>
             </div>
           </li>
-          <li class="Games__posts-game trendings shop-item">
-            <div class="Games__posts-img trendings">
-              <img class="Games-img shop-item-image"
-                src="https://i.pinimg.com/564x/f0/31/f3/f031f3fe6d4aa16f796cfe88bff11ec4.jpg" alt="">
+
+          <li class="Games__posts-game trending">
+            <div class="Games__posts-img trending">
+              <img class="Games-img" src="https://i.pinimg.com/564x/f0/31/f3/f031f3fe6d4aa16f796cfe88bff11ec4.jpg"
+                alt="">
             </div>
-            <div class="Games__posts-info trendings shop-item-details ">
-              <p class="Games__posts-info--title trendings shop-item-title ">God of War</p>
-              <p class="Games__posts-info--despcrition trendings">Lorem ipsum dolor sit amet, consectetur adipisicing
+            <div class="Games__posts-info trending">
+              <p class="Games__posts-info--title trending">Uncharted 4 PS4</p>
+              <p class="Games__posts-info--description trending">Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit.</p>
-              <div class="Games__posts-info--price trendings shop-item-price"> 55,00</div>
-              <div class="Games__posts-info--buttons trendings">
-                <div class="eye-view Games__posts-eye trendings">
+              <div class="Games__posts-info--price trending">USD 45,00</div>
+              <div class="Games__posts-info--buttons trending">
+                <div class="eye-view Games__posts-eye trending">
                   <div class="fas fa-eye"></div>
                 </div>
-                <div class="Games__posts-cart trendings">
-                  <div class="fas fa-shopping-cart shop-item-button"></div>
+                <div class="Games__posts-cart trending">
+                  <div class="fas fa-shopping-cart"></div>
                 </div>
               </div>
             </div>
           </li>
-          <li class="Games__posts-game trendings shop-item ">
-            <div class="Games__posts-img trendings">
-              <img class="Games-img shop-item-image"
-                src="https://i.pinimg.com/564x/96/2a/f8/962af8c0df348ef4159b672df3b3e6b4.jpg" alt="">
+
+          <li class="Games__posts-game trending">
+            <div class="Games__posts-img trending">
+              <img class="Games-img" src="https://i.pinimg.com/564x/96/2a/f8/962af8c0df348ef4159b672df3b3e6b4.jpg"
+                alt="">
             </div>
-            <div class="Games__posts-info trendings shop-item-details ">
-              <p class="Games__posts-info--title trendings shop-item-title">DOOM</p>
-              <p class="Games__posts-info--despcrition trendings">Lorem ipsum dolor sit amet, consectetur adipisicing
+            <div class="Games__posts-info trending">
+              <p class="Games__posts-info--title trending">Uncharted 4 PS4</p>
+              <p class="Games__posts-info--description trending">Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit.</p>
-              <div class="Games__posts-info--price trendings shop-item-price"> 35,00</div>
-              <div class="Games__posts-info--buttons trendings">
-                <div class="eye-view Games__posts-eye trendings">
+              <div class="Games__posts-info--price trending">USD 45,00</div>
+              <div class="Games__posts-info--buttons trending">
+                <div class="eye-view Games__posts-eye trending">
                   <div class="fas fa-eye"></div>
                 </div>
-                <div class="Games__posts-cart trendings">
-                  <div class="fas fa-shopping-cart shop-item-button"></div>
+                <div class="Games__posts-cart trending">
+                  <div class="fas fa-shopping-cart"></div>
                 </div>
               </div>
             </div>
           </li>
-          <li class="Games__posts-game trendings shop-item">
-            <div class="Games__posts-img trendings">
-              <img class="Games-img shop-item-image "
-                src="https://i.pinimg.com/564x/e1/c3/4d/e1c34d839ade67b0e33dc7e8ee6dcce8.jpg" alt="">
+          <li class="Games__posts-game trending">
+            <div class="Games__posts-img trending">
+              <img class="Games-img" src="https://i.pinimg.com/564x/e1/c3/4d/e1c34d839ade67b0e33dc7e8ee6dcce8.jpg"
+                alt="">
             </div>
-            <div class="Games__posts-info trendings shop-item-details">
-              <p class="Games__posts-info--title trendings shop-item-title">Sword Art Online</p>
-              <p class="Games__posts-info--despcrition trendings">Lorem ipsum dolor sit amet, consectetur adipisicing
+            <div class="Games__posts-info trending">
+              <p class="Games__posts-info--title trending">Uncharted 4 PS4</p>
+              <p class="Games__posts-info--description trending">Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit.</p>
-              <div class="Games__posts-info--price trendings shop-item-price "> 45,00</div>
-              <div class="Games__posts-info--buttons trendings">
-                <div class="eye-view Games__posts-eye trendings">
+              <div class="Games__posts-info--price trending">USD 45,00</div>
+              <div class="Games__posts-info--buttons trending">
+                <div class="eye-view Games__posts-eye trending">
                   <div class="fas fa-eye"></div>
                 </div>
-                <div class="Games__posts-cart trendings">
-                  <div class="fas fa-shopping-cart shop-item-button"></div>
+                <div class="Games__posts-cart trending">
+                  <div class="fas fa-shopping-cart"></div>
                 </div>
               </div>
             </div>
@@ -337,10 +327,10 @@
               <img class="Games-img shop-item-image"
                 src="https://i.pinimg.com/564x/cf/02/f6/cf02f65397f8cf77f1f885bc5db1294f.jpg" alt="">
             </div>
-            <div class="Games__posts-info xbox shop-item-details">
-              <p class="Games__posts-info--title xbox shop-item-title "> Forza Horizon 1</p>
-              <p class="Games__posts-info--despcrition xbox">Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.</p>
+
+            <div class="Games__posts-info xbox">
+              <p class="Games__posts-info--title xbox">Jump Force</p>
+              <p class="Games__posts-info--description xbox">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               <div class="Games__posts-info--price xbox shop-item-price"> 25,00</div>
               <div class="Games__posts-info--buttons xbox">
                 <div class="eye-view Games__posts-eye xbox">
@@ -357,10 +347,10 @@
               <img class="Games-img shop-item-image"
                 src="https://i.pinimg.com/564x/cf/02/f6/cf02f65397f8cf77f1f885bc5db1294f.jpg" alt="">
             </div>
-            <div class="Games__posts-info xbox shop-item-details">
-              <p class="Games__posts-info--title xbox shop-item-title "> Forza Horizon 2</p>
-              <p class="Games__posts-info--despcrition xbox">Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.</p>
+
+            <div class="Games__posts-info xbox">
+              <p class="Games__posts-info--title xbox">Fortinate</p>
+              <p class="Games__posts-info--description xbox">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               <div class="Games__posts-info--price xbox shop-item-price"> 25,00</div>
               <div class="Games__posts-info--buttons xbox">
                 <div class="eye-view Games__posts-eye xbox">
@@ -377,10 +367,10 @@
               <img class="Games-img shop-item-image"
                 src="https://i.pinimg.com/564x/cf/02/f6/cf02f65397f8cf77f1f885bc5db1294f.jpg" alt="">
             </div>
-            <div class="Games__posts-info xbox shop-item-details">
-              <p class="Games__posts-info--title xbox shop-item-title "> Forza Horizon 3</p>
-              <p class="Games__posts-info--despcrition xbox">Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.</p>
+
+            <div class="Games__posts-info xbox">
+              <p class="Games__posts-info--title xbox">Lego Video Game</p>
+              <p class="Games__posts-info--description xbox">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               <div class="Games__posts-info--price xbox shop-item-price"> 25,00</div>
               <div class="Games__posts-info--buttons xbox">
                 <div class="eye-view Games__posts-eye xbox">
@@ -397,10 +387,10 @@
               <img class="Games-img shop-item-image"
                 src="https://i.pinimg.com/564x/cf/02/f6/cf02f65397f8cf77f1f885bc5db1294f.jpg" alt="">
             </div>
-            <div class="Games__posts-info xbox shop-item-details">
-              <p class="Games__posts-info--title xbox shop-item-title "> Forza Horizon 4</p>
-              <p class="Games__posts-info--despcrition xbox">Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.</p>
+
+            <div class="Games__posts-info xbox">
+              <p class="Games__posts-info--title xbox">Forza Horizon</p>
+              <p class="Games__posts-info--description xbox">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               <div class="Games__posts-info--price xbox shop-item-price"> 25,00</div>
               <div class="Games__posts-info--buttons xbox">
                 <div class="eye-view Games__posts-eye xbox">
@@ -432,10 +422,10 @@
               <img class="Games-img shop-item-image "
                 src="https://i.pinimg.com/564x/cf/02/f6/cf02f65397f8cf77f1f885bc5db1294f.jpg" alt="">
             </div>
-            <div class="Games__posts-info ps shop-item-details">
-              <p class="Games__posts-info--title ps  shop-item-title">Uncharted 1 PS4</p>
-              <p class="Games__posts-info--despcrition ps">Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.</p>
+
+            <div class="Games__posts-info ps shop-item-button ">
+              <p class="Games__posts-info--title ps shop-item-button ">Uncharted 4 PS4</p>
+              <p class="Games__posts-info--description ps">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               <div class="Games__posts-info--price ps shop-item-price">45,00</div>
               <div class="Games__posts-info--buttons ps">
                 <div class="eye-view Games__posts-eye ps">
@@ -452,10 +442,10 @@
               <img class="Games-img shop-item-image "
                 src="https://i.pinimg.com/564x/cf/02/f6/cf02f65397f8cf77f1f885bc5db1294f.jpg" alt="">
             </div>
-            <div class="Games__posts-info ps shop-item-details">
-              <p class="Games__posts-info--title ps  shop-item-title">Uncharted 2 PS4</p>
-              <p class="Games__posts-info--despcrition ps">Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.</p>
+
+            <div class="Games__posts-info ps">
+              <p class="Games__posts-info--title ps">Uncharted 4 PS4</p>
+              <p class="Games__posts-info--description ps">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               <div class="Games__posts-info--price ps shop-item-price">25,00</div>
               <div class="Games__posts-info--buttons ps">
                 <div class="eye-view Games__posts-eye ps">
@@ -472,10 +462,10 @@
               <img class="Games-img shop-item-image "
                 src="https://i.pinimg.com/564x/cf/02/f6/cf02f65397f8cf77f1f885bc5db1294f.jpg" alt="">
             </div>
-            <div class="Games__posts-info ps shop-item-details">
-              <p class="Games__posts-info--title ps  shop-item-title">Uncharted 3 PS4</p>
-              <p class="Games__posts-info--despcrition ps">Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.</p>
+
+            <div class="Games__posts-info ps">
+              <p class="Games__posts-info--title ps">Uncharted 4 PS4</p>
+              <p class="Games__posts-info--description ps">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               <div class="Games__posts-info--price ps shop-item-price"> 35,00</div>
               <div class="Games__posts-info--buttons ps">
                 <div class="eye-view Games__posts-eye ps">
@@ -492,10 +482,10 @@
               <img class="Games-img shop-item-image "
                 src="https://i.pinimg.com/564x/cf/02/f6/cf02f65397f8cf77f1f885bc5db1294f.jpg" alt="">
             </div>
-            <div class="Games__posts-info ps shop-item-details">
-              <p class="Games__posts-info--title ps  shop-item-title">Uncharted 4 PS4</p>
-              <p class="Games__posts-info--despcrition ps">Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.</p>
+
+            <div class="Games__posts-info ps ">
+              <p class="Games__posts-info--title ps ">Uncharted 4 PS4</p>
+              <p class="Games__posts-info--description ps">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               <div class="Games__posts-info--price ps shop-item-price"> 45,00</div>
               <div class="Games__posts-info--buttons ps">
                 <div class="eye-view Games__posts-eye ps">
@@ -622,7 +612,7 @@
             </div>
             <div class="Games__posts-info access shop-item-details ">
               <p class="Games__posts-info--title access shop-item-title ">Control XBOX ONE GOW 4 Blanco</p>
-              <p class="Games__posts-info--despcrition access">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              <p class="Games__posts-info--description access">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               </p>
               <div class="Games__posts-info--price access shop-item-price ">60,00</div>
               <div class="Games__posts-info--buttons access">
@@ -643,7 +633,7 @@
             </div>
             <div class="Games__posts-info access shop-item-details ">
               <p class="Games__posts-info--title access shop-item-title ">Control XBOX ONE GOW 4 Negro</p>
-              <p class="Games__posts-info--despcrition access">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              <p class="Games__posts-info--description access">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               </p>
               <div class="Games__posts-info--price access shop-item-price ">60,00</div>
               <div class="Games__posts-info--buttons access">
@@ -664,7 +654,7 @@
             </div>
             <div class="Games__posts-info access shop-item-details ">
               <p class="Games__posts-info--title access shop-item-title ">Control XBOX ONE GOW 4 Oro</p>
-              <p class="Games__posts-info--despcrition access">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              <p class="Games__posts-info--description access">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               </p>
               <div class="Games__posts-info--price access shop-item-price ">60,00</div>
               <div class="Games__posts-info--buttons access">
@@ -685,7 +675,7 @@
             </div>
             <div class="shop-item-details Games__posts-info access">
               <p class="shop-item-title Games__posts-info--title access">Control XBOX ONE GOW 4 Azul</p>
-              <p class="Games__posts-info--despcrition access">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              <p class="Games__posts-info--description access">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               </p>
               <div class="shop-item-price Games__posts-info--price access">60.00</div>
               <div class="Games__posts-info--buttons access">
@@ -702,32 +692,6 @@
         </ul>
       </div>
     </section>
-
-    <!-- Test items to cart -->
-    <!-- <section class="container content-section">
-      <h2 class="section-header">MERCH</h2>
-      <div class="shop-items">
-        <div class="shop-item">
-          <span class="shop-item-title">T-Shirt</span>
-          <img class="shop-item-image"
-            src="http://3.bp.blogspot.com/-37aQruO6ipc/T0Qcea9OtQI/AAAAAAAAAcQ/slAiC_k4uFc/s1600/250px-Super_Mario_Bros._3_coverart.png">
-          <div class="shop-item-details">
-            <span class="shop-item-price">$19.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-          </div>
-        </div>
-        <div class="shop-item">
-          <span class="shop-item-title">Coffee Cup</span>
-          <img class="shop-item-image"
-            src="http://3.bp.blogspot.com/-37aQruO6ipc/T0Qcea9OtQI/AAAAAAAAAcQ/slAiC_k4uFc/s1600/250px-Super_Mario_Bros._3_coverart.png">
-          <div class="shop-item-details">
-            <span class="shop-item-price">$6.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-          </div>
-        </div>
-      </div>
-
-    </section> -->
 
     <!-- Cart -->
 
@@ -760,7 +724,7 @@
         <ul>
           <li>SHOP GAMES</li>
           <li>LATEST</li>
-          <li>TRENDINGS</li>
+          <li>TRENDING</li>
           <li>XBOX</li>
           <li>PLAY STATION</li>
           <li>ACCESORIES</li>
