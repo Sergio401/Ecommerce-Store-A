@@ -1,6 +1,24 @@
 @import url(./header.css);
 
 
+.Menu-cart{
+    position:relative;
+}
+.Menu__cart-content{
+    position: fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    right:10%;
+    top:35%;
+    height:60px;
+    width:60px;
+    border-radius: 50%;
+    color: var(--gray-small);
+    background-color:var(--purple-second);
+    z-index:1;
+}
+
 .Cart__container{
     position: fixed;
     display: none;
@@ -16,6 +34,7 @@
     z-index: 1;
     visibility: hidden;
     overflow: scroll;
+
   
 }
 
@@ -32,6 +51,8 @@
   background-color:var(--gray-small);
   position: relative;
   border-radius: 15px;
+    max-width: 1024px;
+    margin:52px auto;
 }
 
 .Cart__close{

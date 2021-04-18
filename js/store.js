@@ -8,6 +8,7 @@ const $modalCart = document.querySelector('.Cart__container')
 const $iconCart = document.querySelector('.Header__list-item-cart')
 const $iconCartD = document.querySelector('.Header__list-item-cartD')
 const $iconCloseCart = document.querySelector('.Cart__close')
+const $iconCartFixed = document.querySelector('.Menu__cart')
 
 $iconCart.addEventListener('click', (e) => {
     e.preventDefault();
@@ -26,6 +27,10 @@ $iconCartD.addEventListener('click', (e) => {
 
 $iconCloseCart.addEventListener('click', () => {
     $modalCart.classList.remove('active')
+})
+
+$iconCartFixed.addEventListener('click', () => {
+    $modalCart.classList.add('active')
 })
 
 
