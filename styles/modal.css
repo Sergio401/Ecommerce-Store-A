@@ -90,7 +90,7 @@
   font-weight: bold;
   margin-bottom: 8px;
 }
-.Modal__posts-info--despcrition{
+.Modal__posts-info--description{
   color:var(--gray-dark);
   font-size: .9rem;
   margin-bottom: 5px;
@@ -210,7 +210,7 @@
     
     
   }
-  .Modal__posts-info--despcrition{
+  .Modal__posts-info--description{
     margin-bottom:25px;
   }
 }
